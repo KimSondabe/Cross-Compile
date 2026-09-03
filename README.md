@@ -12,6 +12,7 @@ sudo apt install -y crossbuild-essential-arm64
 If `crossbuild-essential-armhf` cannot be installed, you can install the `gcc-arm-linux-gnueabihf` package separately:  
 ```bash
 sudo apt install -y gcc-aarch64-linux-gnu
+```
 
 ### 2. Download the Linux Source Code  
 You need to download the appropriate kernel source for Raspberry Pi 4 (BCM2711). Raspberry Pi uses a customized branch of the Linux kernel, which can be obtained from the Raspberry Pi GitHub repository:  
