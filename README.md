@@ -25,13 +25,9 @@ git clone --branch rpi-5.4.y --depth=1 https://github.com/raspberrypi/linux.git
 ### 3. Configure the Kernel
 ```bash
 cd ~/Embedded_System/linux
-
 KERNEL=kernel8
-
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
-
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- prepare
-
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- modules_prepare
 ```
 
