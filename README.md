@@ -1,6 +1,6 @@
 # Cross-Compile
 Instruct cross-compile from host to Raspberry Pi4 using Linux OS 64 bit
-## How to cross-compile a program for Embedded 
+## How to cross-compile a program for Embedded System
 ### 1. Install Necessary Tools  
 To cross-compile a driver for PCA9685, you need to set up the following tools:  
 The cross-compiler (`arm-linux-gnueabihf-gcc`) and supporting packages:  
