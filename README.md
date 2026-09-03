@@ -8,6 +8,7 @@ The cross-compiler (`arm-linux-gnueabihf-gcc`) and supporting packages:
 sudo apt update
 sudo apt install -y git bc bison flex libssl-dev make libc6-dev libncurses5-dev
 sudo apt install -y crossbuild-essential-arm64
+```
 If `crossbuild-essential-armhf` cannot be installed, you can install the `gcc-arm-linux-gnueabihf` package separately:  
 ```bash
 sudo apt install -y gcc-aarch64-linux-gnu
