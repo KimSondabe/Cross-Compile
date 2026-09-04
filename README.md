@@ -14,7 +14,7 @@ Raspberry Pi is know as a small computer with full features like our computer.Ho
 
 ## How to cross-compile a program to Raspberry Pi4 using Linux OS 64 bit
 ### 1. Install Necessary Tools  
-To cross-compile a driver for PCA9685, you need to set up the following tools:  
+To cross-compile a program, you need to set up the following tools:  
 The cross-compiler (`arm-linux-gnueabihf-gcc`) and supporting packages:  
 ```bash
 sudo apt update
@@ -82,14 +82,12 @@ aarch64-linux-gnu-gcc hello.c -o hello
 - When prompted with `yes/no`, type `yes` and press Enter, then enter the password `1` to complete the connection. Then the terminal will change to the Raspberry Pi4 terminal with username is ubuntu.
 - Open a new terminal in your window and transfer the `test` folder to the Raspberry Pi using:
 ```bash
-scp -r /home/username/Embedded_System/test ubuntu@192.168.0.120:/home/ubuntu #change the username to your username
+scp -r /home/username/Embedded_System/test/hello ubuntu@192.168.0.120:/home/ubuntu   #change the username to your username
 ```
-- Change the terminal into Raspberry Pi4 terminal named ubuntu, you can see all the folder and program:
+- Change the terminal into Raspberry Pi4's terminal named ubuntu, you can see the program:
 ```bash
-
-
 ls
-chmod +x hello.c #grant execute permission to program hello.c
+chmod +x hello #grant execute permission to program hello
 ./hello #run the program and print into your terminal
 ```
 
