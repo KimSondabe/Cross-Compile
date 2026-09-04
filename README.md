@@ -42,6 +42,7 @@ make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- bcm2711_defconfig
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- prepare
 make ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- modules_prepare
 ```
+![image1](image1)
 
 ### 4. Create a test direction
 ```bash
@@ -61,10 +62,12 @@ int main(){
   return 0;
 }
 ```
+![image2](image2)
 Then compile program and run for testing:
 ```bash
 gcc hello.c -o hello && ./hello
 ```
+![image3](image3)
 After that, compile to file that Raspberry can understand and run
 ```bash
 aarch64-linux-gnu-gcc hello.c -o hello 
