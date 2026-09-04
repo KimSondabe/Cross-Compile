@@ -63,11 +63,13 @@ int main(){
 }
 ```
 ![image2](image2.png)
-Then compile program and run for testing:
+
+Then come back to terminal, compile program and run for testing:
 ```bash
 gcc hello.c -o hello && ./hello
 ```
 ![image3](image3.png)
+
 After that, compile to file that Raspberry can understand and run
 ```bash
 aarch64-linux-gnu-gcc hello.c -o hello 
