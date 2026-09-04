@@ -1,6 +1,18 @@
 # Cross-Compile
-Instruct cross-compile from host to Raspberry Pi4 using Linux OS 64 bit
-## How to cross-compile a program for Embedded System
+Instruct cross-compile a program from host device to Raspberry Pi4 using Linux OS 64 bit
+
+## Table of contents
+- [Introduction](#introduction)
+- [How to cross-compile a program to Raspberry Pi4 using Linux OS64 bit](#how-to-cross-compile-a-program-to-raspberry-pi4-using-linux-os-64-bit)
+- [Credits and References](#credits-and-references)
+- [Thanks to](#thanks-to)
+
+## Introduction
+A full turtorial how to cross-compile a program from your computer to Raspberry Pi4 using Linux OS 64 bit. Aim of this guide is instruct step by step get acquainted with Raspberry Pi4 especially cross-compile a cornerstone of Embedded Linux get ready for next topic  that i will cover.
+
+Raspberry Pi is know as a small computer with full features like our computer.However, it is challenging because of limitations of hardware. Cross-compile provide a solutions when you can build and compile a program in your own devices like laptop or computer then translate to language that Raspberry Pi can understand and run it. Program in our computer is easier due to available tools for coding and debuging and faster due to strong power of hardware. 
+
+## How to cross-compile a program to Raspberry Pi4 using Linux OS 64 bit
 ### 1. Install Necessary Tools  
 To cross-compile a driver for PCA9685, you need to set up the following tools:  
 The cross-compiler (`arm-linux-gnueabihf-gcc`) and supporting packages:  
@@ -71,9 +83,21 @@ scp -r /home/username/Embedded_System/test ubuntu@192.168.0.120:/home/ubuntu #ch
 ```
 - Change the terminal into Raspberry Pi4 terminal named ubuntu, you can see all the folder and program:
 ```bash
+
+
 ls
 chmod +x hello.c #grant execute permission to program hello.c
 ./hello #run the program and print into your terminal
 ```
 
+## Credits and References
+This project is based on:
+[Cross-Compile](https://github.com/EmNetLab411/Multimedia-Embedded-Systems/tree/main/Cross_compile_driver)
+
+Modified and adapted for the target embedded platform.
+
+## Thanks to
+[Embedded Networking Labrotatory](https://www.facebook.com/lab411)
+
+Tran Luong Duy 20213751 Hanoi University of Science and Technology
 
